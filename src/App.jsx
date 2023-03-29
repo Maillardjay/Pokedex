@@ -1,9 +1,11 @@
-import './App.css'
-import PokemonCard from './Component/PokemonCard.jsx'
+import "./App.css";
+import PokemonCard from "./Component/PokemonCard.jsx";
 
 function App() {
   return (
-    <div> <PokemonCard /> </div>
+    <div>
+      <PokemonCard />
+    </div>
   );
 }
 
