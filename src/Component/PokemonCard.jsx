@@ -1,18 +1,5 @@
-const pokemonList = [
-    {
-      name: "bulbizar",
-      imgSrc:
-        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
-    },
-
-    {
-      name: "mew",
-    },
-
-  ];
-
-function PokemonCard(){
-    const pokemon = pokemonList[1];
+function PokemonCard(props){
+    const pokemon = props.pokemon;
 
     return (
       <figure>
