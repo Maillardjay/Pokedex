@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import PokemonCard from "./Component/PokemonCard.jsx";
 import NavBar from "./Component/Navbar";
 
+
 const pokemonList = [
   {
-      name: "bulbizar",
+      name: "Bulbizar",
       imgSrc: 
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",  
     },  
@@ -30,6 +31,11 @@ const pokemonList = [
   ];
 
 function App() {
+
+  useEffect(
+    () => { alert("Hello Pokemon Trainer :) ");
+    }, []);
+
   const [pokemonIndex, setPokemonIndex] = useState(0);
 
   return (

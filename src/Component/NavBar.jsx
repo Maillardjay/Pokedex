@@ -1,3 +1,5 @@
+import React, { useEffect } from "react";
+
 function NavBar({ pokemonIndex, setPokemonIndex, pokemonList }) {
   const handlePreviewClick = () => {
     if (pokemonIndex > 0) {
@@ -10,6 +12,12 @@ function NavBar({ pokemonIndex, setPokemonIndex, pokemonList }) {
       setPokemonIndex(pokemonIndex + 1);
     }
   };
+
+  useEffect(() => {
+    if (pokemonList[pokemonIndex].name === "Pikachu") {
+      alert("Pika Pikachu !!!");
+    }
+  }, [pokemonIndex, pokemonList]);
 
   return (
     <div>
